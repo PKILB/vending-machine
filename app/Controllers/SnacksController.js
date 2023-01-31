@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js";
-
+import {snacksService} from "../Services/SnacksService.js"
 import { setHTML } from "../Utils/Writer.js";
 
 
@@ -15,12 +15,27 @@ function _drawSnacks() {
 
 // }
 
+function _drawMoney() {
+    let money = appState.money
+    let template = ''
+    for (let i = 0; i < money; i++) {
+        template += `<div class="col-1 fs-1">
+        $$
+        </div>`
+    }
+    setHTML('add-money', template)
+}
+
 
 export class SnacksController {
     constructor () {
         _drawSnacks()
 
-        
+        appState.on('money', _drawMoney)
 
+    }
+
+    increaseCoins () {
+        snacksService.increaseCoins()
     }
 }
