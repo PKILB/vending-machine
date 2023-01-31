@@ -17,7 +17,16 @@ class AppState extends EventEmitter {
       imgUrl: 'https://sureketo.com/images/16x9/reign-reignbow-sherbet-energy-drink.jpg'
     }
     ),
+    new Snack(
+      {
+        name: 'Orange-Dreamsicle Reign',
+        price: 3.00,
+        imgUrl: 'https://worldofenergydrinks.nl/userdata/public/gfx/537.jpg'
+      }
+    ),
       ]
+
+      money = 0
 }
     
     

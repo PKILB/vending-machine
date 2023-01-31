@@ -23,7 +23,7 @@ export class Snack {
                   </div>
                   <button class="col-2 btn btn-surprise mdi mdi-cart"></button>
                 </div>
-                ${this.price} 
+                $${this.price} 
               </div>
             </div>
           </div>
