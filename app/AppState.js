@@ -14,7 +14,7 @@ class AppState extends EventEmitter {
     {
       name:'Rainbow-Sherbert Reign', 
       price: 3.50, 
-      imgUrl: 'https://s7.vitaminshoppe.com/is/image/VitaminShoppe/2237204_01?$OP_PDPZOOM$'
+      imgUrl: 'https://sureketo.com/images/16x9/reign-reignbow-sherbet-energy-drink.jpg'
     }
     ),
       ]

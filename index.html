@@ -17,22 +17,45 @@
 
 <body>
   <header>
+    
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
         <span class="ms-2">vending-machine</span>
+        <span class="justify-content-end">
+          <button class="btn btn-warning" onclick="app.snackController.increaseMoney()">Add $0.25</button>
+        </span>
       </a>
+
     </nav>
   </header>
   <main>
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
-      </div>
+      <div class="row justify-content-center" id="snacks">
+        <!-- <div class="col-3 p-1">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <img src="${this.imgUrl}" class="py-2 img-fluid">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8">
+                      ${this.name} 
+                    </div>
+                    <button class="col-4 btn btn-surprise">Buy Me</button>
+                  </div>
+                  ${this.price} 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>    
     </div>
+    
+
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
